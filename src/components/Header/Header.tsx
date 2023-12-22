@@ -4,64 +4,21 @@ import { graphql, useStaticQuery } from "gatsby";
 import Img from "gatsby-image";
 
 function Header() {
-  const widht = window.innerWidth;
-  /* const data = useStaticQuery(graphql`
-    query {
-      file(relativePath: { eq: "../images/images1.jpg" }) {
-        childImageSharp {
-          fluid(maxWidth: 1000) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-    }
-  `); */
-
-  useEffect(() => {
-    console.log("widht", widht);
-  }, [widht]);
 
   return (
     <div
-    className="body"
+      className="body"
     >
-      <div
-        style={{
-          width: "400px",
-          height: "583px",
-          flexDirection: "column",
-          justifyContent: "center",
-          alignItems: "flex-start",
-          gap: "32px",
-          display: "inline-flex",
-        }}
+      <div className="container"
       >
-        <div
-          style={{
-            height: "272px",
-            flexDirection: "column",
-            justifyContent: "flex-start",
-            alignItems: "flex-start",
-            gap: "12px",
-            display: "flex",
-          }}
+        <div className="container"
         >
           <div
-            style={{
-              width: "400px",
-              color: "white",
-              fontSize: "12px",
-              fontFamily: "Nunito Sans",
-              fontWeight: 700,
-              textTransform: "uppercase",
-              lineHeight: "16.80px",
-              letterSpacing: "2.40px",
-              wordWrap: "break-word",
-            }}
+            className="remesas"
           >
             remesas
           </div>
-          <div style={{ width: "400px" }}>
+          <div style={{ maxWidth: "400px" }}>
             <span
               style={{
                 color: "#ED99C5",
